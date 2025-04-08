@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_marginTop="12dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/ksiazki"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Moja Książka"
+        android:textSize="20dp"
+        android:textColor="#212121" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/zobaczOpis"
+        android:text="ZOBACZ OPIS"
+        android:textColor="#009688"
+        android:backgroundTint="#64B5F6"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="DODAJ DO CHCĘ PRZEZYTAĆ"
+        android:textColor="#009688"
+        android:backgroundTint="#64B5F6"
+        android:layout_weight="1"
+        android:id="@+id/dodaj"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#009688"
+        android:backgroundTint="#64B5F6"
+        android:id="@+id/przypomnij"
+        android:text="PRZYPOMNIJ O KSIĄŻCE"
+        android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodano do listy chce przeczytać"
+        android:textColor="#008000"
+        android:id="@+id/ukrytyTekst"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O Książce"
+        android:textStyle="bold"
+        android:textColor="#212121"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fascynująca powieść przygodowa, która wciągnie Cię od pierwszej strony."
+        android:textColor="#3F51B5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addedToListTextView"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#808080"
+        android:text="Autor: Daniel Pabin"
+        android:textSize="12dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0" />
+
+
+</LinearLayout>
